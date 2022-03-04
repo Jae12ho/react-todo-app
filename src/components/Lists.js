@@ -3,7 +3,6 @@ import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
 import List from './List';
 
 const Lists = React.memo(({ todoData, setTodoData, handleClick }) => {
-    console.log("lists")
     const handleEnd = (result) => {
         if (!result.destination) return;
 
@@ -34,6 +33,7 @@ const Lists = React.memo(({ todoData, setTodoData, handleClick }) => {
                                             id={data.id}
                                             title={data.title}
                                             completed={data.completed}
+                                            isEdit={data.isEdit}
                                             todoData={todoData}
                                             setTodoData={setTodoData}
                                             provided={provided}
