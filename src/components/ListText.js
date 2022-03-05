@@ -19,7 +19,7 @@ function ListText({ id, isEdit, title, completed, todoData, setTodoData }) {
     })
     
     setTodoData(newTodoData);
-    setEditText('');
+    // setEditText();
   };
 
   if (!isEdit) {
